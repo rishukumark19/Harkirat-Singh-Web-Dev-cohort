@@ -1,4 +1,4 @@
-# Harkirat Singh's Full Stack Web Development Cohort 2.0 Journey
+# Harkirat Singh's Full Stack Web Development Cohort Journey
 
 This repository documents my learning journey through Harkirat Singh's comprehensive Web Development cohort. I'll be using this space to store my projects, notes, and progress as I work through the syllabus.
 
