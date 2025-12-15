@@ -37,6 +37,59 @@ if (input == 1) {
   console.log("Hello Ms. " + firstName);
 }
 //3
-for (let i = 0; i <= 1000; i++) {
+for (let i = 0; i <= 10; i++) {
   console.log(i);
 }
+
+// Array : to aggrigate large data
+const personArray = ["harkirat", "raman", "kirat"];
+console.log(personArray[0]);
+console.log(personArray[1]);
+
+//odd number print:
+const ages = [21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
+for (let i = 0; i < ages.length; i++) {
+  if (ages[i] % 2 == 0) {
+    console.log(ages[i]);
+  }
+}
+//write a program to print bigggest number in an array
+const numbers = [12, 45, 67, 89, 23, 90, 34];
+let biggestNumber = 0;
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] > biggestNumber) {
+    biggestNumber = numbers[i];
+  }
+}
+console.log("The biggest number is: " + biggestNumber);
+//Write a program that prints all the male people’s first name
+const personsArray = ["harkirat", "ramna", "kirat"];
+const personsGender = ["male", "female", "male"];
+for (let i = 0; i < personArray.length; i++) {
+  if (personsGender[i] == "male") {
+    console.log(personsArray[i]);
+  }
+}
+console.log("-----Objects-----");
+//Objects
+const persons = {
+  person1: { firstName: "harkirat", gender: "male" },
+  person2: { firstName: "raman", gender: "female" },
+  person3: { firstName: "kirat", gender: "male" },
+};
+
+//Write a program that prints all the male people’s first name given a complex object
+for (let i = 0; i < persons.length; i++) {
+  if (persons[i]["gender"] == "male") {
+    console.log(persons[i]["firstName"]);
+  }
+}
+//NOTE: this is not giving output as expected because persons is not an array.
+
+// Write a program that reverses all the elements of an array
+const numberList = [1, 2, 3, 4, 5];
+let reverseList = [];
+for (let i = numberList.length - 1; i >= 0; i--) {
+  reverseList.push(numberList[i]);
+}
+console.log(reverseList);
