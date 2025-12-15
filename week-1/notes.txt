@@ -1,0 +1,45 @@
+Javascript Foundation
+----------------------
+-Why languages?  - ram only understand 01 and coders write in any specific language(high level)  ,which then gets compiled into 01(every language has a compiler)
+-Interpreted vs compiled languages
+-Why JS >> Other languages in some use-cases
+-Strict vs dynamic languages
+-Single threaded nature of JS   - means , js can only use one core at a time , thats y its consider a bad language for a scalable system (cluster module - for make it use all core)
+-Simple primitives in JS (number, strings, booleans)
+-Complex primitives in JS (arrays, objects)
+-Functions in Javascript
+-Practise problem solving
+-Callback functions, Event loop, callback queue, Asynchronous programming
+-Callback hell and Promises
+--------------------------------------------------------------------------
+
+
+-JS is an interpreted language
+C++ is a compiled language
+Interpreted languages go line by line while executing, can partially run until an
+error comes
+-Browsers can only understand HTML/CSS/JS (not technically true)
+Thanks to Node.js , Javascript can also be used for “Backend Development”
+
+
+Static vs dynamic languages
+---------------------------------
+-------------benefits------------
+more strict code | can move fast
+                 |
+                 |
+                 |
+Constructs :
+------------
+variable:let (changabel value) , const(cannot change value), var(least use)
+Data type: sting , number,booleans
+
+
+
+
+
+
+
+
+
+
