@@ -93,3 +93,55 @@ for (let i = numberList.length - 1; i >= 0; i--) {
   reverseList.push(numberList[i]);
 }
 console.log(reverseList);
+
+//-------Functions-----
+/*
+take some input , do some logic on top of it and gives output.
+*/
+console.log("-------Function--------");
+
+function add(a, b) {
+  const sumValue = a + b;
+  return sumValue;
+}
+const value = add(1, 2);
+console.log(value);
+const value2 = add(1, 10);
+console.log(value2);
+
+//Functions CAN take other functions as input - this will confuse you (callbacks)
+function sum(num1, num2, fnToCall) {
+  //fnToCall- a function goes into as an argument to a function
+  let result = num1 + num2;
+  fnToCall(result); // here we are calling that function with result as argument
+}
+
+function displayResult(data) {
+  console.log("Result of the sum is : " + data);
+}
+
+function displayResultPassive(data) {
+  console.log("Sum's result is : " + data);
+}
+
+// You are only allowed to call one function after this
+// How will you displayResult of a sum
+const ans = sum(5, 10, displayResult);
+// displayResult(ans);
+// displayResultPassive(ans);
+
+//---setTimout---
+function greet() {
+  console.log("Hello after 3 seconds");
+}
+setTimeout(greet, 3000); // after 3 seconds it will call greet function
+
+//---setInterval---
+setInterval(greet, 2000); // every 2 seconds it will call greet function
+
+/*
+For today - 
+1. Create a counter in Javascript (counts down from 30 to 0)
+2. Calculate the time it takes between a setTimeout call and the inner function actually running
+3. Create a terminal clock (HH:MM:SS)
+*/
