@@ -99,3 +99,83 @@ function canVote(age) {
   }
 }
 console.log(canVote(17));
+
+/*
+5. if /Else Statements
+Example: same as above canVote function
+
+/*
+6. Loops  : lets u run a certain logic again and again.
+*/
+let users1 = ["Rishu", "John", "Doe"];
+for (let i = 0; i < 3; i++) {
+  //initialization ; condition ; increment
+  console.log(users1[i]);
+}
+
+/*Complex topics 
+-------------------------------------------------------------
+1. Objects 
+2. Arrays
+*/
+//Object :collection of  key value pair ; lets u aggregate related data together
+let person = {
+  name: "Rishu",
+  age: 21,
+  gender: "male",
+};
+console.log(person["name"]); //accessing value using key
+console.log(person.age); //accessing value using key
+//-------------------------------------------------------------
+//Assignment : write a function that takes a user as an input and greets them with their name and age
+function greetUser(user) {
+  console.log("Hello," + user.name + ".Your age is " + 19); //concatinating
+}
+greetUser(person);
+//Array : collection of similar data types ; lets u aggregate data together
+let arr = ["apple", "banana", "cherry"];
+console.log(arr[1]); //prints banana
+//Array of objects
+let users = [
+  { name: "Rishu", age: 21 },
+  { name: "John", age: 30 },
+  { name: "Doe", age: 25 },
+];
+console.log(users[0].name); //prints Rishu
+console.log(users[1].age); //prints 30
+
+/*
+Assignment:
+    Create a function that takes an array of objects as input,
+    and returns the users whose age > 18 and are male
+ */
+
+//initialise a new array,push to a new array
+//you can use filter funcction inside an array |map|reduce
+
+const userList = [
+  { name: "Rishu", age: 21, gender: "male" },
+  { name: "John", age: 17, gender: "male" },
+  { name: "Jane", age: 22, gender: "female" },
+  { name: "Doe", age: 19, gender: "male" },
+];
+//for way
+// for (let i = 0; i < userList.length; i++) {
+//   if (userList[i]["age"] >= 18 && userList[i]["gender"] == "male") {
+//     console.log(userList[i]);
+//   }
+// }
+
+console.log("function way");
+function sortMale(array) {
+  let arraySorted = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].gender === "male" && array[i].age >= 18) {
+      arraySorted.push(array[i]);
+    }
+  }
+  return arraySorted;
+}
+console.log(sortMale(userList));
+
+
